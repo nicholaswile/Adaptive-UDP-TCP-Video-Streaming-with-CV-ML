@@ -1,2 +1,2 @@
 # Adaptive-UDP-TCP-Video-Streaming-with-CV-ML
-Hybrid UDP/TCP video streaming leveraging CV/ML techniques to prioritize important frames and adapt the transport layer protocol accordingly. Important frames will be sent with TCP and less important frames will be sent with UDP.
+A prototype hybrid UDP/TCP video streaming application. We use the OpenCV computer vision library to calculate pixel difference between lecture video frames. We leverage this to identify key frames in a video stream and adapt the transport layer protocol accordingly for real-time video streaming. Keyframes will be sent with TCP and less important frames will be sent with UDP.
