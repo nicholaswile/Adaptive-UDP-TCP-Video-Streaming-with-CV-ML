@@ -32,13 +32,14 @@ udp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 frame_count = 0
 keyframe_indices = []
 pixel_values = []
-threshold = 4000000
+threshold = 5000000
 
 '''
 Where the livestream will save as a video-on-demand 
 The sender saves debug frames which display pixel diff and keyframe classification
 '''
 vid_dir= "../test-vids/"
+fig_dir = "../figures/"
 
 # Define the codec and create a VideoWriter object
 fps = 20.0 # Through testing, this worked best for webcam
@@ -94,6 +95,9 @@ while True:
     # Save frame to video
     vid.write(debug_frame)
 
+    # Below is for saving frames as images, used for debugging.
+    # cv2.imwrite(f"{fig_dir}{frame_count}.png", debug_frame)
+    
     # Display the resulting sender's frame
     cv2.imshow("Client: sent frame", debug_frame)
 
@@ -135,7 +139,6 @@ plt.title(f"Pixel Difference Distribution\n({len(keyframe_indices)} keyframes)")
 plt.xlabel("Video Frame")
 plt.ylabel("Pixel Difference")
 
-fig_dir = "../figures/"
 name = "webcam_histogram.png"
 plt.savefig(f"{fig_dir}{name}")
 plt.show()

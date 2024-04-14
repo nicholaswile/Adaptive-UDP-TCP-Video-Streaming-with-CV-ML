@@ -7,7 +7,7 @@ Create a virtual environment, activate it, and run the following command:
 pip install -r requirements.txt
 ```
 
-To start livestreaming, open two terminals. In the first terminal, run the following command to start the server that receives video frames:
+To start livestreaming, open two terminals. If your webcam is turned on, turn it off. In the first terminal, run the following command to start the server that receives video frames:
 ```
 python receiver.py
 ```
