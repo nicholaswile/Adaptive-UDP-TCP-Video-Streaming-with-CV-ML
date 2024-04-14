@@ -1,4 +1,6 @@
 cnetvenv/
-downloader.py
+src/downloader.py
 test-vids/lecture1.mp4
-webcam.avi
+test-vids/webcam.avi
+test-vids/webcam_sender.avi
+test-vids/livestream_receiver.avi
