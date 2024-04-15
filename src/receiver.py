@@ -1,3 +1,10 @@
+'''
+Nicholas Wile, Gar Lock, Carter Mondy
+CS 6027: Computer Networks
+Adaptive UDP/TCP Video Streaming with CV
+Spring 2024
+'''
+
 import cv2
 import socket
 import pickle

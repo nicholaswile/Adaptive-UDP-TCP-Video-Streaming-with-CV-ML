@@ -1,4 +1,11 @@
 '''
+Nicholas Wile, Gar Lock, Carter Mondy
+CS 6027: Computer Networks
+Adaptive UDP/TCP Video Streaming with CV
+Spring 2024
+'''
+
+'''
 Adapted from OpenCV
 https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html
 '''

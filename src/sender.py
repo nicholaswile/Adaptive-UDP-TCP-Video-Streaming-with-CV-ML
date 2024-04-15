@@ -1,3 +1,10 @@
+'''
+Nicholas Wile, Gar Lock, Carter Mondy
+CS 6027: Computer Networks
+Adaptive UDP/TCP Video Streaming with CV
+Spring 2024
+'''
+
 import cv2
 import socket
 import pickle
@@ -97,7 +104,7 @@ while True:
 
     # Below is for saving frames as images, used for debugging.
     # cv2.imwrite(f"{fig_dir}{frame_count}.png", debug_frame)
-    
+
     # Display the resulting sender's frame
     cv2.imshow("Client: sent frame", debug_frame)
 
